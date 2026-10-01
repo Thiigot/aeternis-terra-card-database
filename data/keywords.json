@@ -1,0 +1,336 @@
+{
+  "keywords": [
+    {
+        "id":"disparo",
+        "name":"Disparo",
+        "hasValue":true,
+        "text":"Causa {value} de dano a uma unidade inimiga à sua escolha."
+    },
+    {
+        "id":"queimar",
+        "name":"Queimar",
+        "hasValue":true,
+        "text":"Ao causar dano a uma unidade, aplique {value} {unit} de Queimar e cause dano adicional equivalente aos acúmulos de Queimar que ela possuir.",
+        "unit":{"one":"acúmulo","other":"acúmulos"}
+    },
+    {
+        "id":"golpe-duplo",
+        "name":"Golpe duplo",
+        "text":"Ataca duas vezes por turno. Caso o primeiro ataque zere a vida de uma unidade, o segundo irá direto para o Conjurador."
+    },
+    {
+        "id":"curar",
+        "name":"Curar",
+        "hasValue":true,
+        "text":"Concede +0/+{value} a uma unidade aliada à sua escolha, com exceção de si mesmo."
+    },
+    {
+        "id":"barreira",
+        "name":"Barreira",
+        "hasValue":true,
+        "text":"Esta carta e as cartas aliadas adjacentes a ela recebem {value} de dano a menos de qualquer origem até o fim do turno."
+    },
+    {
+        "id":"enfraquecer",
+        "name":"Enfraquecer",
+        "hasValue":true,
+        "text":"Reduz -{value}/-0 de uma unidade à sua escolha até o fim do turno."
+    },
+    {
+        "id":"congelar",
+        "name":"Congelar",
+        "hasValue":true,
+        "text":"A cada {value} turnos, congela uma unidade à sua escolha até o fim do turno. Unidades congeladas não atacam. Uma unidade só pode ser congelada uma vez por turno."
+    },
+    {
+        "id":"silencio",
+        "name":"Silêncio",
+        "hasValue":true,
+        "text":"A cada {value} turnos, silencia uma unidade até o fim do turno. Unidades silenciadas não podem usar suas habilidades. Sempre resolve primeiro do que qualquer habilidade."
+    },
+    {
+        "id":"veu",
+        "name":"Véu",
+        "text":"Esta unidade e as cartas aliadas adjacentes a ela não podem ser alvo de nenhuma habilidade inimiga."
+    },
+    {
+        "id":"fragilizar",
+        "name":"Fragilizar",
+        "hasValue":true,
+        "text":"Fragiliza uma unidade inimiga à sua escolha até o fim do turno. Unidades fragilizadas recebem +{value} de dano de qualquer fonte."
+    },
+    {
+        "id":"empoderar",
+        "name":"Empoderar",
+        "hasValue":true,
+        "text":"Uma unidade aliada à sua escolha recebe +{value}/+0 até o fim do turno."
+    },
+    {
+        "id":"estase",
+        "name":"Êstase",
+        "text":"Impede um aliado afetado por uma habilidade desta unidade de atacar e silencia todas as suas habilidades até o fim do turno."
+    },
+    {
+        "id":"alternar",
+        "name":"Alternar",
+        "text":"Pode usar apenas uma das suas habilidades por turno."
+    },
+    {
+        "id":"ressoar",
+        "name":"Ressoar",
+        "text":"Concede as suas habilidades para todas as unidades com Ressoar, mesmo as que estão em latência."
+    },
+    {
+        "id":"crescer",
+        "name":"Crescer",
+        "hasValue":true,
+        "text":"Recebe +{value}/+{value} por turno a partir do próximo turno em que entrar em campo."
+    },
+    {
+        "id":"valor",
+        "name":"Valor",
+        "hasValue":true,
+        "text":"Recebe +{value}/+0 caso a unidade à sua frente tenha mais força do que esta unidade."
+    },
+    {
+        "id":"coragem",
+        "name":"Coragem",
+        "hasValue":true,
+        "text":"Concede +{value}/+0 a unidades adjacentes até o fim do turno."
+    },
+    {
+        "id":"provocar",
+        "name":"Provocar",
+        "text":"Atrai para si todas as habilidades inimigas que seriam direcionadas às suas unidades no campo. Não interage com o modificador “Todos”."
+    },
+    {
+        "id":"afinidade",
+        "name":"Afinidade",
+        "hasValue":true,
+        "labelTemplate":"Afinidade com {faction} {value}",
+        "text":"Enquanto estiver vivo, unidades da facção {faction}, com exceção de si mesmo, receberão +{value}/+{value}."
+    },
+    {
+        "id":"legiao",
+        "name":"Legião",
+        "hasValue":true,
+        "text":"Recebe +{value}/+0 a cada unidade adjacente a si até o fim do turno."
+    },
+    {
+        "id":"inversao",
+        "name":"Inversão",
+        "text":"Durante o seu turno na fase inicial, você pode escolher reverter os valores atuais de força e vida da carta."
+    },
+    {
+        "id":"impaciencia",
+        "name":"Impaciência",
+        "hasValue":true,
+        "text":"Perde {value} de latência sempre que recebe dano. Quando não possuir mais latência, recebe +{value}/+0 a cada vez que tenha recebido dano em latência."
+    },
+    {
+        "id":"imortal",
+        "name":"Imortal",
+        "hasValue":true,
+        "text":"Ao ser destruído fora de latência, você pode sacrificar {value} cartas na sua mão para reiniciar sua latência (reduzido de 1) e restaurar toda a sua vida."
+    },
+    {
+        "id":"aquatico",
+        "name":"Aquático",
+        "text":"Não pode ser alvejado por habilidades ou receber dano enquanto estiver em latência. As habilidades desta unidade funcionam enquanto estiver em latência. Ao causar dano, retorna para a latência no turno seguinte. Enquanto estiver na frente de outra unidade com Aquático, sua latência se torna 0."
+    },
+    {
+        "id":"armadura",
+        "name":"Armadura",
+        "hasValue":true,
+        "text":"Reduz qualquer dano recebido em {value}."
+    },
+    {
+        "id":"numeroso",
+        "name":"Numeroso",
+        "hasValue":true,
+        "text":"Você pode ter até cinco cópias desta carta no exército. Recebe +{value}/+{value} a cada cópia desta carta que entrou em field, com exceção de si mesmo."
+    },
+    {
+        "id":"regenerar",
+        "name":"Regenerar",
+        "hasValue":true,
+        "text":"Recebe +0/+{value} por turno a partir do próximo turno em que entrar em field."
+    },
+    {
+        "id":"adaptacao",
+        "name":"Adaptação",
+        "text":"Não pode ser afetado pela mesma habilidade mais de uma vez e não contribui para o crescimento de habilidades. Prossegue válido ao evoluir."
+    },
+    {
+        "id":"ego",
+        "name":"Ego",
+        "text":"Não ataca se não houver uma unidade inimiga à frente por mais de um turno."
+    },
+    {
+        "id":"alcance",
+        "name":"Alcance",
+        "text":"Pode bloquear unidades voadoras."
+    },
+    {
+        "id":"impavidez",
+        "name":"Impavidez",
+        "text":"Não pode ser afetado pelas habilidades da carta diretamente à sua frente. Se elas possuírem um alvo, este alvo não pode ser esta carta."
+    },
+    {
+        "id":"efemero",
+        "name":"Efêmero",
+        "text":"Ao causar dano, é destruído e não bloqueia o dano da unidade atacante."
+    },
+    {
+        "id":"montaria",
+        "name":"Montaria",
+        "text":"Esta unidade entra aprimorada. Ao ser destruída pela primeira vez, retorna imediatamente à sua forma base."
+    },
+    {
+        "id":"voador",
+        "name":"Voador",
+        "text":"Só pode ser bloqueado por unidades voadoras. Pode escolher entre atacar o Conjurador ou a unidade à sua frente."
+    },
+    {
+        "id":"intransmutavel",
+        "name":"Intransmutável",
+        "text":"Não pode ser transmutado, apenas destruído ou evoluído."
+    },
+    {
+        "id":"necrofago",
+        "name":"Necrófago",
+        "hasValue":true,
+        "text":"No início do próximo turno, recebe +{value}/+{value} a cada unidade destruída no turno anterior."
+    },
+    {
+        "id":"enfurecer",
+        "name":"Enfurecer",
+        "hasValue":true,
+        "text":"Recebe +{value}/+0 ao sofrer dano."
+    },
+    {
+        "id":"intangivel",
+        "name":"Intangível",
+        "text":"Não pode ser alvo de nenhuma habilidade inimiga."
+    },
+    {
+        "id":"celeridade",
+        "name":"Celeridade",
+        "text":"Pode trocar de posição uma vez durante o seu turno da fase inicial. Duas cartas com Celeridade podem trocar de lugar entre si."
+    },
+    {
+        "id":"defesa-dormente",
+        "name":"Defesa dormente",
+        "hasValue":true,
+        "text":"Enquanto estiver em latência ou afetado por efeitos defensivos ou ofensivos inimigos, recebe {value} de Armadura."
+    },
+    {
+        "id":"vinganca",
+        "name":"Vingança",
+        "hasValue":true,
+        "text":"Ao receber dano de uma unidade, causa {value} de dano a essa unidade."
+    },
+    {
+        "id":"decaindo",
+        "name":"Decaindo",
+        "hasValue":true,
+        "text":"Durante a fase de combate, perde -{value}/-{value} por turno a partir do próximo turno em que entrar em campo."
+    },
+    {
+        "id":"espalhar",
+        "name":"Espalhar",
+        "text":"Seus ataques causam dano a unidades em posições adjacentes."
+    },
+    {
+        "id":"iniciativa",
+        "name":"Iniciativa",
+        "text":"Sempre ataca primeiro. Caso zere a vida de uma unidade, ela não ataca de volta."
+    },
+    {
+        "id":"perfurar",
+        "name":"Perfurar",
+        "hasValue":true,
+        "text":"Ignora até {value} de redução de dano. Ao destruir uma unidade, o dano excedente vai para o Conjurador."
+    },
+    {
+        "id":"raiva",
+        "name":"Raiva",
+        "hasValue":true,
+        "text":"Recebe +{value}/+0 no início do turno caso tenha causado dano no turno anterior."
+    },
+    {
+        "id":"corrosao",
+        "name":"Corrosão",
+        "hasValue":true,
+        "text":"Unidades que sofrerem dano desta unidade perdem -{value}/+0 imediatamente."
+    },
+    {
+        "id":"vampirismo",
+        "name":"Vampirismo",
+        "hasValue":true,
+        "text":"Recebe +0/+{value} no começo do turno caso tenha causado dano no turno anterior."
+    },
+    {
+        "id":"infectar",
+        "name":"Infectar",
+        "text":"Ao causar dano, aplica um acúmulo de Infecção. Unidades com três acúmulos de Infecção são destruídas imediatamente."
+    },
+    {
+        "id":"intimidar",
+        "name":"Intimidar",
+        "hasValue":true,
+        "text":"Unidades que sofrerem dano desta carta não atacam por {value} {unit}. Uma vez por unidade.",
+        "unit":{"one":"turno",
+        "other":"turnos"}
+    },
+    {
+        "id":"flanquear",
+        "name":"Flanquear",
+        "hasValue":true,
+        "text":"Enquanto estiver nas posições 1 ou 5, pode atacar uma unidade entre as posições 2 a 4. Ao fazê-lo, causa +{value} de dano."
+    },
+    {
+        "id":"dupla-acao",
+        "name":"Dupla Ação",
+        "text":"Suas habilidades são ativadas duas vezes por turno, se possível."
+    },
+    {
+        "id":"amaldicoar",
+        "name":"Amaldiçoar",
+        "hasValue":true,
+        "text":"Amaldiçoa uma unidade inimiga à sua escolha até o fim do turno. Unidades amaldiçoadas perdem -{value}/-{value}."
+    },
+    {
+        "id":"permanencia",
+        "name":"Permanência",
+        "text":"Se esta carta não for destruída com uma única instância de dano, retorna para o seu valor base de vida imediatamente."
+    },
+    {
+        "id":"inquietude",
+        "name":"Inquietude",
+        "text":"Esta carta deve se mover para uma posição livre no seu campo durante a fase inicial. Caso não seja possível, autodestrói-se. É compatível com Celeridade."
+    },
+    {
+        "id":"vazio",
+        "name":"Vazio",
+        "text":"Esta carta não pode ser alvo ou ser influenciada por nenhuma habilidade aliada."
+    },
+    {
+        "id":"cacador",
+        "name":"Caçador",
+        "hasValue":true,
+        "text":"Causa +{value} de dano em unidades que possuírem mais vida atual do que ela."
+    },
+    {
+        "id":"etereo",
+        "name":"Etéreo",
+        "text":"Esta carta não sofre dano de nenhuma fonte e não pode ser alvo de habilidades. Cartas que estiverem à frente dela atacam diretamente o Conjurador. Esta habilidade é ignorada contra unidades etéreas."
+    },
+    {
+        "id":"academico",
+        "name":"Acadêmico",
+        "hasValue":true,
+        "text":"No início do turno, a cada vez que esta unidade for afetada por qualquer habilidade, com exceção das dela própria, recebe +{value}/+{value}."
+    }
+  ]
+}

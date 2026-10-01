@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101218">
+  <title>Card Atlas — catálogo de cartas</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+  <div class="topbar">
+    <a class="brand" href="#" aria-label="Card Atlas, início"><span class="brand-mark">✦</span><span>CARD<span class="brand-light">ATLAS</span></span></a>
+  <details class="filter-dropdown">
+      <summary class="filter-summary"><span class="filter-summary-title"><span class="brand-mark">⌕</span><span><strong>Filtros</strong><small>Facção, palavras-chave e atributos</small></span></span><span class="filter-summary-action"><span class="filter-open-label">ABRIR</span><span class="filter-close-label">FECHAR</span><span class="filter-chevron">⌄</span></span></summary>
+    <aside class="filters top-filters" aria-label="Filtros do catálogo">
+      <div class="filter-heading"><div><span class="eyebrow">NAVEGAR</span><h2>Filtros</h2></div><button id="clear-filters" class="reset" type="button">Limpar tudo <span>↺</span></button></div>
+      <div class="filter-search"><label class="search-label" for="search">BUSCA</label><div class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Nome, texto ou palavra-chave…"></div></div>
+      <div class="filter-group"><h3>Facção</h3><div id="faction-filters" class="check-list"></div></div>
+      <div class="filter-group"><h3>Palavras-chave</h3><div id="ability-filters" class="check-list"></div></div>
+      <div class="filter-group range-group"><div class="range-title"><h3>Mana</h3><span id="mana-range-value">0 – 0</span></div><div class="dual-range" data-dual-range="mana"><div class="dual-range-track"></div><input class="range-min" type="range" min="0" value="0" aria-label="Mana mínima"><input class="range-max" type="range" min="0" value="0" aria-label="Mana máxima"></div><div class="range-ends"><span>0</span><span id="mana-range-end">0</span></div></div>
+      <div class="filter-group range-group"><div class="range-title"><h3>Latência</h3><span id="latency-range-value">0 – 0</span></div><div class="dual-range" data-dual-range="latency"><div class="dual-range-track"></div><input class="range-min" type="range" min="0" value="0" aria-label="Latência mínima"><input class="range-max" type="range" min="0" value="0" aria-label="Latência máxima"></div><div class="range-ends"><span>0</span><span id="latency-range-end">0</span></div></div>
+      <div class="filter-group range-group"><div class="range-title"><h3>Força</h3><span id="strength-range-value">0 – 0</span></div><div class="dual-range" data-dual-range="strength"><div class="dual-range-track"></div><input class="range-min" type="range" min="0" value="0" aria-label="Força mínima"><input class="range-max" type="range" min="0" value="0" aria-label="Força máxima"></div><div class="range-ends"><span>0</span><span id="strength-range-end">0</span></div></div>
+      <div class="filter-group range-group"><div class="range-title"><h3>Vida</h3><span id="health-range-value">0 – 0</span></div><div class="dual-range" data-dual-range="health"><div class="dual-range-track"></div><input class="range-min" type="range" min="0" value="0" aria-label="Vida mínima"><input class="range-max" type="range" min="0" value="0" aria-label="Vida máxima"></div><div class="range-ends"><span>0</span><span id="health-range-end">0</span></div></div>
+      <div class="filter-foot"><span class="live-dot"></span> Filtros se combinam automaticamente</div>
+    </aside>
+  </details>
+  </div>
+  </header>
+  <main>
+    <section class="catalog" aria-label="Catálogo de cartas">
+      <div class="results">
+        <div class="results-bar"><div><span class="eyebrow">COLEÇÃO</span><h2 id="result-title">Todas as cartas <span id="result-count"></span></h2></div><div class="sort-controls"><label class="sort-label" for="sort-direction">ORDENAR POR</label><select id="sort-direction" aria-label="Direção da ordenação"><option value="asc">Crescente (A–Z / 0–9)</option><option value="desc">Decrescente (Z–A / 9–0)</option></select><select id="sort-field" aria-label="Atributo da ordenação"><option value="name">Nome</option><option value="mana">Mana</option><option value="latency">Latência</option><option value="strength">Força</option><option value="health">Vida</option></select></div></div>
+        <div id="card-grid" class="card-grid" aria-live="polite"></div>
+        <div id="empty-state" class="empty-state" hidden><span>⌕</span><h3>Nenhuma carta encontrada</h3><p>Tente remover algum filtro ou buscar por outro termo.</p><button id="empty-reset" type="button">Limpar filtros</button></div>
+        <p class="sample-note">Cartas demonstrativas. Substitua os dados em <code>cards.json</code> pelos do seu jogo.</p>
+      </div>
+    </section>
+    <section id="sobre" class="about"><span class="eyebrow">FEITO PARA CRESCER</span><p>Um catálogo simples, organizado pelos atributos que importam para o seu jogo.</p></section>
+  </main>
+  <footer><span class="brand-mark">✦</span> CARD ATLAS <span class="footer-muted">· catálogo de cartas personalizável</span></footer>
+  <dialog id="card-dialog" class="card-dialog" aria-label="Detalhes da carta">
+    <div class="dialog-shell">
+      <div class="dialog-heading"><span class="eyebrow">DETALHES DA CARTA</span><button id="close-card-dialog" class="dialog-close" type="button" aria-label="Fechar detalhes">×</button></div>
+      <div id="form-switcher" class="form-switcher" role="tablist" aria-label="Formas da carta"></div>
+      <div id="dialog-content" class="dialog-content"></div>
+    </div>
+  </dialog>
+  <script src="assets/app.js"></script>
+</body>
+</html>
+
+
