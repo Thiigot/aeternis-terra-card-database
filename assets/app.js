@@ -1,6 +1,8 @@
 const state = {query:"", factions:new Set(), abilities:new Set(), ranges:{}, sort:"name-asc", cards:[], keywordDefinitions:[]};
 const $ = selector => document.querySelector(selector);
-const projectBaseUrl = new URL("../../", document.currentScript.src);
+// Resolve card data and artwork from the site root. This preserves the
+// repository subpath used by GitHub Pages project sites.
+const projectBaseUrl = new URL("./", document.baseURI);
 let activeFamilyId = null;
 const getForms = family => Array.isArray(family.forms) && family.forms.length ? family.forms : [family];
 const allForms = () => state.cards.flatMap(getForms);
